@@ -1,4 +1,4 @@
-# ConsulasSQL
+# ConsultasSQL
 BD Tienda con las consultas pedidas por el profesor Jaider
 ---
 
@@ -25,7 +25,7 @@ where (clientes_id=clientes.id);
 select clientes.*, ventas.clientes_id, ventas.total
 from clientes
 inner join ventas on (clientes.id = ventas.clientes_id)
-where ventas.fecha between '2023-03-23' and '2023-03-25'
+where ventas.fecha between '2023-03-23' and '2023-03-25';
 ````
 ![Consulta sql#3](Images/total_ventaCliente.PNG)
 
@@ -34,6 +34,6 @@ where ventas.fecha between '2023-03-23' and '2023-03-25'
 ```` sql
 select clientes.*, ventas.total
 from clientes,ventas
-where clientes.id = ventas.clientes_id and (ventas.fecha between '2023-03-23' and '2023-03-25')
+where clientes.id = ventas.clientes_id and (ventas.fecha between '2023-03-23' and '2023-03-25');
 ````
 ![Consulta sql#3](Images/total_ventaCliente_where.PNG)
