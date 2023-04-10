@@ -38,3 +38,10 @@ where ventas.fecha between '2023-03-23' and '2023-03-25';
 ````
 ![Consulta sql#3](Images/total_ventaCliente.PNG)
 
+---
+### Consulta de la compra de clientes con Left Join
+```` sql
+SELECT clientes.nombre, ventas.clientes_id, ventas.total
+FROM clientes
+LEFT JOIN ventas ON ventas.clientes_id = clientes.id;
+````
