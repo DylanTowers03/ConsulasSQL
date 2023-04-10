@@ -45,3 +45,4 @@ SELECT clientes.nombre, ventas.clientes_id, ventas.total
 FROM clientes
 LEFT JOIN ventas ON ventas.clientes_id = clientes.id;
 ````
+![Consulta sql#4](Images/ConsultaLeftJoin.png)
